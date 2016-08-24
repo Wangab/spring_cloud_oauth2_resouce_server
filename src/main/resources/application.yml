@@ -1,0 +1,23 @@
+spring:
+  application:
+    name: APIResourceService
+  data:
+    mongodb:
+      uri: mongodb://localhost:27017/test
+      username: wangab
+      password: wab123
+  redis:
+    host: 127.0.0.1
+    port: 6379
+
+server:
+  context-path: /apiv1
+  port: 8081
+
+security:
+  oauth2:
+    resource:
+      id: apiServiceV1
+logging:
+  level:
+    root: info
